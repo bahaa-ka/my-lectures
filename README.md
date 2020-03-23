@@ -8,3 +8,6 @@ the whole project built around the concept "Web Scrabing"  where we scrape the c
 - Better UI representation of the content of the lectures website
 - categorized access to lectures based on the faculty
 - Realtime notification for new lectures (on the roadmap)
+
+### important notice
+this project was last time modified more than 2 years ago and contains many depracated code and lot of code bad practices. the goal of sharing the project "as is" without attempting to fix and remove what mentioned earlier is to give the new comers and beginners the ability to contributre and learn as much as they can
