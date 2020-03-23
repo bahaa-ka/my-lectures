@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="192dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/library"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="MyLectures"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="24sp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="By KoN"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        />
+
+</LinearLayout>

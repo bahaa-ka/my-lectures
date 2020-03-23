@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".LoginActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        android:id="@+id/formBack"
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="100dp"
+        android:id="@+id/formLogo"
+        android:src="@drawable/library"
+        android:scaleType="fitCenter"
+        />
+    <TextView
+        android:id="@+id/logoName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MyLectures"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/formLogo"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/logoSubName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By KoN"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/logoName"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoSubName"
+        android:id="@+id/scrollView"
+        >
+
+        <LinearLayout
+            android:id="@+id/len"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/trans_white_rectangle"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get Started"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Your Logosis Account Credentials"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_marginBottom="30dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+
+                />
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Logosis Username"
+                android:singleLine="true"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_user_icon"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/edtxt_username"
+                android:layout_marginBottom="10dp"
+                />
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Password"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_pass_icon"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:inputType="textPassword"
+                android:id="@+id/edtxt_password"
+                android:layout_marginBottom="10dp"
+
+                />
+
+            <CheckBox
+                android:id="@+id/ck_remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember my credentials"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="32dp"
+                android:button="@drawable/radio_button"
+                android:paddingLeft="5dp"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:text="Sign IN"
+                android:textStyle="normal"
+                android:background="@drawable/register_button"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="SignIn"
+                android:paddingRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="36dp"
+                android:id="@+id/btn_signIn"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/rights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Created by Bahaa Kallas"
+        android:textColor="@color/white"
+        android:layout_below="@+id/scrollView"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        />
+</RelativeLayout>

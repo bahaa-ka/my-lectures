@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/reload"
+        android:icon="@drawable/ic_refresh"
+        android:title="Reload"
+        android:fontFamily = "sans-serif-condensed"
+        />
+    <item
+        android:id="@+id/check_update"
+        android:icon="@drawable/ic_app_update"
+        android:title="Check For Update"
+        android:fontFamily = "sans-serif-condensed"
+        />
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/ic_feedback_black_24dp"
+        android:title="Report Problem"
+        android:fontFamily = "sans-serif-condensed"
+        />
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/ic_fiber_new"
+        android:title="What's New"
+        android:fontFamily = "sans-serif-condensed"
+        />
+</menu>
